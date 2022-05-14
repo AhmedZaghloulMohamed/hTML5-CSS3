@@ -1,0 +1,81 @@
+.discountInfo{
+    display: flex;
+    height: 40vh;
+}
+
+.discountDescriotion{
+    flex: 2;
+    background-color: #f7f3ef;
+    
+}
+.descTitle{
+    position: relative;
+    padding-left: 8%;
+    margin: 15px 0 0 15px;
+}
+.descTitle i{
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    font-size: 25px;
+    margin-right: 1%;
+    color: var(--mainColor);
+
+}
+.discountDescriotion p{
+    line-height: 1.5;
+    color: #7878 ;
+    font-size: 20px;
+    margin:20px;
+    padding:10px;
+}
+.discountDescriotion .pollets{
+    text-align: right;
+    padding: 15px;
+}
+.discountDescriotion .pollets span{
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    margin-left: 10PX;
+    background-color: var(--mainColor);
+
+}
+
+.discountItem{
+    position: relative;
+}
+
+.discountItemInfo{
+    position: absolute;
+    top: 20PX;
+    left: 20px;
+}
+
+.discountItemInfo span{
+    color: var(--mainColor);
+}
+
+.discountItem:nth-child(2){
+    flex: 1;
+    margin: 0 2%;
+    background-image: url('../images/cms-banner-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.discountItem:nth-child(2):hover .discountItemInfo{
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+.discountItem:nth-child(3){
+    flex:1;
+    background-image: url('../images/cms-banner-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.discountItem:nth-child(3):hover .discountItemInfo{
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}

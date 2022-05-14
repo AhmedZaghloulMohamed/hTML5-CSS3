@@ -1,0 +1,73 @@
+.sprideItems{
+    display: flex;
+    justify-content: center;
+}
+
+.sprideItem{
+    flex: 1;
+    flex-wrap: wrap;
+    text-align: center;
+    border-right: 1px solid var(--mainColor);
+}
+
+.sprideItem:last-child{
+    border-right: 0;
+}
+
+.sprideItem h3{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.sprideItem span{
+    color: gray;
+}
+
+.sprideIcon{
+    background-image: url('../images/service-icon.png');
+    height: 55px;
+    background-repeat: no-repeat;
+}
+
+.sprideIcon1{
+    background-position: center 0;
+    transition: background-position 0.5s;
+}
+
+.sprideItem:hover .sprideIcon1{
+    background-position: center -90px;
+}
+
+.sprideIcon2{
+    background-position: center -180px;
+    transition: background-position 0.5s;
+}
+.sprideItem:hover .sprideIcon2{
+    background-position: center -270px;
+}
+
+.sprideIcon3{
+    background-position: center -365px;
+    transition: background-position 0.5s;
+}
+.sprideItem:hover .sprideIcon3{
+    background-position: center -460px;
+}
+
+.sprideIcon4{
+    background-position: center -550px;
+    transition: background-position 0.5s;
+}
+.sprideItem:hover .sprideIcon4{
+    background-position: center -640px;
+}
+
+.sprideIcon5{
+    background-position: center -740px;
+    transition: background-position 0.5s;
+}
+.sprideItem:hover .sprideIcon5{
+    background-position: center -830px;
+}
+
+

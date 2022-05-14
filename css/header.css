@@ -1,0 +1,182 @@
+header{
+    padding: 0.1% 0.3%;
+}
+.header_content{
+    margin-top: 0.2%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 1% 1% 3%;   
+    align-items: center;
+}
+
+.header_logo{
+    flex: 1;
+}
+
+.navbar{
+    flex: 3;
+}
+
+.login{
+    flex: 1;
+}
+
+.header_content ul li{
+    display: inline-block;
+}
+
+.header_content ul li a{
+    padding: 2px 20px;
+}
+.login ul li{
+    padding: 0px 10px;
+}
+.header_content ul li,
+.header_content ul li a{
+    color:var(--SubColor);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* hover effects on links */
+.navbar ul li .linkItem{
+    position: relative;
+}
+
+.navbar ul li .linkItem::before{
+    position: absolute;
+    content: '';
+    border-width: 0 2px;
+    border-color: var(--mainColor);
+    border-style: solid;
+    width: 99%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale3d(1,0,1);
+    transition: transform 0.5s;
+}
+
+.navbar ul li .linkItem:hover:before{
+    transform:scale3d(1,1,1);
+}
+
+.navbar ul li .linkItem::after{
+    position: absolute;
+    content: '';
+    border-width: 2px 0; 
+    border-color: var(--mainColor);
+    border-style: solid;
+    width: 102%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    transform: scale3d(0,1,1);
+    transition: transform 0.5s;
+    transform-origin: left;
+}
+
+.navbar ul li .linkItem:hover:after{
+    transform:scale3d(1,1,1);
+}
+
+
+
+/* backgroung image */
+
+/* Main banner */
+main .container img{
+    width: 100%;
+    height: 80vh;
+}
+
+
+/* dropDown */
+
+.dropDown{
+    position: relative;
+}
+
+.dropDownMenu{
+    position: absolute;
+    width: 420px;
+    border:1px solid var(--mainColor);
+    background-color: aliceblue;
+    padding: 5px;
+    margin-top: 10px;
+    transform: scale(0);
+    visibility: hidden;
+    transition: transform 0.3s,visibility 0.3s;
+}
+
+.dropDownMenu ul{
+    text-align: center;
+    display: table-cell;
+}
+
+.dropDownMenu ul li:first-child a{
+    display: block;
+    margin-bottom: 5px;
+    border-bottom: 3px dotted var(--mainColor);
+}
+
+.dropDownMenu ul li{
+    line-height: 1.5;
+}
+
+.dropDown:hover .dropDownMenu{
+    transform: scale(1);
+    visibility: visible;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main .background{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.image img{ 
+    position: absolute;
+    animation-name:sliding;
+    animation-duration: 60s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    z-index: 3;
+}
+
+
+@keyframes sliding {
+    0%   {background-image: url('../images/images/banner.PNG');}
+    25%  {background-image: url('../images/images/category-banner1.jpg');}
+    50%  {background-image: url('../images/images/category-banner2.jpg');}
+    75%  {background-image: url('../images/images/category-banner3.jpg');}
+    100% {background-image: url('../images/images/category-banner4.jpg');}
+  } */
+  
